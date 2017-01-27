@@ -203,6 +203,7 @@ class jenkins(
   $user               = $::jenkins::params::user,
   $manage_group       = $::jenkins::params::manage_group,
   $group              = $::jenkins::params::group,
+  $java_args          = [],
 ) inherits jenkins::params {
 
   validate_string($version)
